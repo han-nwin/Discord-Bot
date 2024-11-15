@@ -1,7 +1,7 @@
-
 # Variables
 CXX = g++
-CXXFLAGS = -Iinclude -Wall -Wextra -DDEBUG -g -std=c++20
+CXXFLAGS = -Iinclude -Wall -Wextra -DDEBUG -g -std=c++20 -I/usr/include
+LDFLAGS = -L/usr/lib -lcpr -lcurl  # Linker flags for linking CPR and libcurl
 SRC_DIR = src
 OBJ_DIR = build
 BIN_DIR = bin
@@ -17,7 +17,7 @@ all: $(TARGET)
 # Link object files to create the final binary
 $(TARGET): $(CPP_OBJECTS)
 	@mkdir -p $(BIN_DIR)
-	$(CXX) $(CPP_OBJECTS) -o $@
+	$(CXX) $(CPP_OBJECTS) -o $@ $(LDFLAGS)  # Added $(LDFLAGS) for linking libraries
 
 # Compile C++ source files
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
@@ -26,11 +26,11 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
 
 # Clean up build artifacts
 clean:
-	rm -rf $(OBJ_DIR) $(BIN_DIR)
+	rm -rf $(OBJ_DIR)/* $(BIN_DIR)/*
 
 # Run the program
 run: all
-	./$(TARGET)
+	./$(TARGET) $(ARGS)
 
 # Phony targets
 .PHONY: all clean run
