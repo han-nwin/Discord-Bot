@@ -1,7 +1,7 @@
 # Variables
 CXX = g++
-CXXFLAGS = -Iinclude -Wall -Wextra -DDEBUG -g -std=c++20 -I/usr/include
-LDFLAGS = -L/usr/lib -lcpr -lcurl  # Linker flags for linking CPR and libcurl
+CXXFLAGS = -Iinclude -I/opt/homebrew/include -Wall -Wextra -DDEBUG -g -std=c++20
+LDFLAGS = -L/opt/homebrew/lib -lcpr -lcurl
 SRC_DIR = src
 OBJ_DIR = build
 BIN_DIR = bin
