@@ -1,7 +1,7 @@
 # Variables
 CXX = g++
-CXXFLAGS = -Iinclude -Wall -Wextra -DDEBUG -g -std=c++20
-LDFLAGS = -Llib -lcpr -lcurl
+CXXFLAGS = -Wall -Wextra -DDEBUG -g -std=c++20
+LDFLAGS = -lcpr -lcurl
 SRC_DIR = src
 OBJ_DIR = build
 BIN_DIR = bin

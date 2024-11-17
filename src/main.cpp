@@ -4,20 +4,17 @@
 #include <cpr/response.h>
 #include <nlohmann/json.hpp>
 #include <string>
+#include <unordered_map>
 #include <vector>
 
 
 struct UserInfo {
-  std::string username;
-  std::string global_name;
-  std::string joined_date;
-  std::string last_message_date;
+  std::string username = "NOT FOUND";
+  std::string global_name = "NOT FOUND";
+  std::string joined_date = "1970-01-01"; //Default to Unix epoch
+  std::vector<std::string> message_dates = {};
 };
 
-struct MsgInfo {
-  std::string username;
-  std::string message_date;
-};
 
 int main (int argc, char *argv[]) {
   if (argc != 2) {
@@ -42,11 +39,9 @@ int main (int argc, char *argv[]) {
   const std::string GUILD_USER_URL = "https://discord.com/api/v10/guilds/" + GUILD_ID +"/members?limit=1000";
   const std::string GUILD_CHANNEL_URL = "https://discord.com/api/v10/guilds/" + GUILD_ID +"/channels";
 
-  //Vector to store user_info struct elements
-  std::vector<UserInfo> user_db;
+  //Hashmap to store user_info struct elements with username as key
+  std::unordered_map<std::string, UserInfo> user_db;
 
-  //Vector to store message info struct elements
-  std::vector<MsgInfo> msg_db;
 
   //High engaged channels
   std::vector<std::string> high_engaged_channels = {
@@ -106,19 +101,29 @@ int main (int argc, char *argv[]) {
       new_user.username = username;
       new_user.global_name = global_name;
       new_user.joined_date = join_date_short;
-      user_db.push_back(new_user);
-
-      //std::cout << "Name: " << global_name << " | Join date: " << join_date_short << std::endl; 
+      
+      //If found new user add to hashmap
+      if (user_db.find(username) == user_db.end()) {
+        user_db.insert({username, new_user});
+      }
+      //PRINT TEST
+      for (const auto & [username, user_info] : user_db) {
+        std::cout << "Username: " << user_info.username << "\n";
+        std::cout << "Global Name: " << user_info.global_name << "\n";
+        std::cout << "Joined Date: " << user_info.joined_date << "\n";
+        std::cout << "Message Date:\n";
+        for (const auto& message_dates : user_info.message_dates) {
+            std::cout << "  - " << message_dates << "\n";
+        }
+        std::cout << "------------------------\n";
+      }
+      std::cout << "TOTAL : " << user_db.size() << std::endl;
     }
   
   } else {
     std::cerr << "Error: HTTP " << response.status_code << "-" << response.text << std::endl;
   }
 
-  for (int i = 0; static_cast<size_t>(i) < user_db.size(); i++) {
-    std::cout << "username: " << user_db[i].username << " | Name: " << user_db[i].global_name << " | Join Date: " << user_db[i].joined_date << std::endl;
-  }
-  std::cout << "TOTAL : " << user_db.size() << std::endl;
 
 
 
@@ -141,13 +146,23 @@ int main (int argc, char *argv[]) {
       if (!channel["id"].is_null()) {
         std::string channel_id = channel["id"];
         std::string limit = "100";
+        std::string last_message_id = "";
         int num_fetch = 1;
         if (std::find(high_engaged_channels.begin(), high_engaged_channels.end(), channel_id) != high_engaged_channels.end()) {
           num_fetch = 5;
         }
+
+        //base url
         std::string CHANNEL_MESSAGE_URL = "https://discord.com/api/v10/channels/" + channel_id + "/messages?limit=" + limit;
         
         for (int i = 0; i < num_fetch; i++ ) {
+
+          //Update the link
+          if (last_message_id != "") {
+            CHANNEL_MESSAGE_URL += "&before=" + last_message_id;
+          }
+
+          //Make API Call
           cpr::Response channel_message_response = cpr::Get(
               cpr::Url{CHANNEL_MESSAGE_URL},
               cpr::Header{
@@ -155,8 +170,16 @@ int main (int argc, char *argv[]) {
               }
             );
           
+          //Processing each call
           if (channel_message_response.status_code == 200) {
+            //Parse response to text
             nlohmann::json channel_message_json = nlohmann::json::parse(channel_message_response.text);
+
+            //store last_message_id
+            if (!channel_message_json.empty()) {
+              last_message_id = channel_message_json.back()["id"];
+            }
+
 
             for (const auto & message : channel_message_json) {
 
@@ -170,21 +193,20 @@ int main (int argc, char *argv[]) {
                 record_date = message["timestamp"];
               }
               std::string record_date_short = record_date.substr(0,10);
+              
+              //Found new user but this should not happen
+              if (user_db.find(record_usrname) == user_db.end()) {
 
-              struct MsgInfo new_record;
-              new_record.username = record_usrname;
-              new_record.message_date = record_date_short;
+                struct UserInfo new_user;
+                new_user.username = record_usrname;
+                new_user.message_dates.push_back(record_date_short);
+                user_db.insert({record_usrname, new_user});
 
-              //Perform a find on msg_db to look if there's a record with the same username exists
-              auto it = std::find_if(msg_db.begin(), msg_db.end(), [&](const MsgInfo &record) {
-                  return record.username == new_record.username;
-              });
-
-              if (it == msg_db.end()) {
-                  // If no record with the same username exists, add it to the db
-                  msg_db.push_back(new_record);
+              } else { //user is already in db
+                user_db[record_usrname].message_dates.push_back(record_date_short); //Append more dates
               }
             }
+
 
             // Open a file for writing
             std::ofstream outputFile("channel_log.json", std::ios::app | std::ios::out);
@@ -205,18 +227,6 @@ int main (int argc, char *argv[]) {
       }
     }
     
-    std::ofstream outFile("message_log.txt", std::ios::app | std::ios::out);
-    if (!outFile.is_open()) {
-      std::cerr << "Error: Could not open the file" << std::endl;
-      return 1;
-    }
-    for (const auto & element : msg_db) {
-      std::cout << "username: " << element.username << " | Last_Message_Date: " << element.message_date << std::endl;
-      std::string outStr = "username: " + element.username + " | last msg date: " + element.message_date + "\n";
-      outFile << outStr;
-    }
-    //Close file
-    outFile.close();
 
     // Open a file for writing
     std::ofstream outputFile("server_log.json");
@@ -231,8 +241,52 @@ int main (int argc, char *argv[]) {
   } else {
     std::cerr << "Error: HTTP " << guild_channel_response.status_code << "-" << guild_channel_response.text << std::endl;
   }
-  
+
+
+  //PRINT TEST
+  for (const auto & [username, user_info] : user_db) {
+    std::cout << "Username: " << user_info.username << "\n";
+    std::cout << "Global Name: " << user_info.global_name << "\n";
+    std::cout << "Joined Date: " << user_info.joined_date << "\n";
+    std::cout << "Message Dates:\n";
+    for (const auto& message_dates : user_info.message_dates) {
+        std::cout << "  - " << message_dates << "\n";
+    }
+    std::cout << "------------------------\n";
+  }
+
+  //NOTE: EXPORT Result to file
+  std::ofstream outFile("final_log.csv", std::ios::app | std::ios::out);
+  if (!outFile.is_open()) {
+    std::cerr << "Error: Could not open the file" << std::endl;
+    return 1;
+  }
+
+  //CSV Header
+  outFile << "User Name,Global Name,Joined Date,Lastest Message Date,Status\n";
+
+  for (auto& [username, user_info] : user_db) {
+    // Sort the message_dates vector
+    std::sort(user_info.message_dates.begin(), user_info.message_dates.end());
+
+    // Write user details and the latest message date
+    outFile << user_info.username << ","
+            << user_info.global_name << ","
+            << user_info.joined_date << ",";
+    
+    if (!user_info.message_dates.empty()) {
+      // Write the latest message date
+      outFile << user_info.message_dates.back() << ","
+              << "Active\n";
+    } else {
+      outFile << "None," // Handle users with no messages
+              << "Inactive\n";
+    }
+  }
+
+  //Close file
+  outFile.close();
+  std::cout << "Export to final_log.csv successfully! " << std::endl;
 
   return 0;
-
 }
