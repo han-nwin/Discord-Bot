@@ -1,11 +1,15 @@
 # Variables
 CXX = g++
-CXXFLAGS = -Iinclude -I/opt/homebrew/include -Wall -Wextra -DDEBUG -g -std=c++20
-LDFLAGS = -L/opt/homebrew/lib -lcpr -lcurl
+CXXFLAGS = -Iinclude -Wall -Wextra -DDEBUG -g -std=c++20
+LDFLAGS = -Llib -lcpr -lcurl
 SRC_DIR = src
 OBJ_DIR = build
 BIN_DIR = bin
 TARGET = $(BIN_DIR)/main
+
+# CPU Core Detection (Cross-Platform)
+CPUS = $(shell nproc 2>/dev/null || sysctl -n hw.ncpu 2>/dev/null || echo 1)
+MAKEFLAGS += -j$(CPUS)
 
 # File lists
 CPP_SOURCES = $(wildcard $(SRC_DIR)/*.cpp)
@@ -28,7 +32,7 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
 clean:
 	rm -rf $(OBJ_DIR)/* $(BIN_DIR)/* 
 
-# Clean json
+# Clean json files
 cleanjson:
 	rm -f *.json
 
@@ -37,7 +41,4 @@ run: all
 	./$(TARGET) $(ARGS)
 
 # Phony targets
-.PHONY: all clean run
-
-# Makefile option to determine CPU cores and use all for building
-MAKEFLAGS += -j$(shell sysctl -n hw.ncpu)
+.PHONY: all clean cleanjson run
