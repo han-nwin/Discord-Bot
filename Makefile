@@ -17,7 +17,7 @@ all: $(TARGET)
 # Link object files to create the final binary
 $(TARGET): $(CPP_OBJECTS)
 	@mkdir -p $(BIN_DIR)
-	$(CXX) $(CPP_OBJECTS) -o $@ $(LDFLAGS)  # Added $(LDFLAGS) for linking libraries
+	$(CXX) $(CPP_OBJECTS) -o $@ $(LDFLAGS)
 
 # Compile C++ source files
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
@@ -26,7 +26,11 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
 
 # Clean up build artifacts
 clean:
-	rm -rf $(OBJ_DIR)/* $(BIN_DIR)/*
+	rm -rf $(OBJ_DIR)/* $(BIN_DIR)/* 
+
+# Clean json
+cleanjson:
+	rm -f *.json
 
 # Run the program
 run: all
@@ -34,3 +38,6 @@ run: all
 
 # Phony targets
 .PHONY: all clean run
+
+# Makefile option to determine CPU cores and use all for building
+MAKEFLAGS += -j$(shell sysctl -n hw.ncpu)
