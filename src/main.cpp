@@ -1,13 +1,15 @@
+#include <iomanip>
 #include <iostream>
 #include <fstream>
 #include <cpr/cpr.h>
 #include <cpr/response.h>
-#include <iterator>
 #include <nlohmann/json.hpp>
 #include <string>
 #include <unordered_map>
 #include <vector>
-
+#include <chrono>
+#include <sstream>
+#include <iomanip>
 
 struct UserInfo {
   std::string username = "NOT FOUND";
@@ -16,6 +18,32 @@ struct UserInfo {
   //message table: each element has date as key
   std::vector<std::pair<std::string, std::string>> message_data = {};
 };
+
+int getInactiveDate (const std::string & last_date_str) {
+  //Parse the input string into time point object
+  std::tm tm = {};
+  std::istringstream ss(last_date_str);
+  ss >> std::get_time(&tm, "%Y-%m-%d");
+
+  if (ss.fail()) {
+    std::cerr << "Failed parsing date string" << std::endl;
+    exit(1);
+  }
+
+  // Convert parsed date to time_point
+  auto givenDate = std::chrono::system_clock::from_time_t(std::mktime(&tm));
+
+  // Get today's date
+  auto today = std::chrono::system_clock::now();
+  auto todayDate = std::chrono::floor<std::chrono::days>(today); // Ignore time portion
+
+  // Calculate the duration between the two dates
+  auto duration = std::chrono::duration_cast<std::chrono::hours>(todayDate - givenDate).count();
+  int days = duration / 24; // Convert hours to days
+
+  return days;
+
+}
 
 
 int main (int argc, char *argv[]) {
@@ -190,11 +218,11 @@ int main (int argc, char *argv[]) {
                 record_usrname = message["author"]["username"];
               }
 
-              std::string record_date = "Unknown";
+              std::string record_date_long = "Unknown";
               if (message.contains("timestamp")) {
-                record_date = message["timestamp"];
+                record_date_long = message["timestamp"];
               }
-              std::string record_date_short = record_date.substr(0,10);
+             // std::string record_date_short = record_date.substr(0,10);
 
               std::string record_content = "Unknown";
               if (message.contains("content")) {
@@ -207,12 +235,12 @@ int main (int argc, char *argv[]) {
                 struct UserInfo new_user;
                 new_user.username = record_usrname;
                // new_user.global_name = record_glob_name;
-                new_user.message_data.push_back({record_date_short, record_content});
+                new_user.message_data.push_back({record_date_long, record_content});
                 //add new user into db
                 user_db.insert({record_usrname, new_user});
 
               } else { //user is already in db
-                user_db[record_usrname].message_data.push_back({record_date_short,record_content}); //Append more dates
+                user_db[record_usrname].message_data.push_back({record_date_long,record_content}); //Append more dates
               }
             }
 
@@ -276,7 +304,7 @@ int main (int argc, char *argv[]) {
     textFile << "Joined Date: " << user_info.joined_date << "\n";
     textFile << "Message Dates:\n";
     for (const auto& message : user_info.message_data) {
-        textFile << "  - " << message.first << " | " << message.second << "\n";
+        textFile << "  - " << message.first.substr(0,10) << " | " << message.second << "\n";
     }
     textFile << "------------------------\n";
   }
@@ -291,7 +319,7 @@ int main (int argc, char *argv[]) {
   }
 
   //CSV Header
-  outFile << "User Name,Global Name,Joined Date,Lastest Message Date,Message Content,Status\n";
+  outFile << "User Name,Global Name,Joined Date,Latest Message Date,Message Content,Status(last 30days)\n";
 
   for (auto& [username, user_info] : user_db) {
     // Write user details and the latest message date
@@ -303,11 +331,18 @@ int main (int argc, char *argv[]) {
     std::sort(user_info.message_data.begin(), user_info.message_data.end(), 
               [](const auto & a, const auto & b) { return a.first < b.first;});
 
+
     if (!user_info.message_data.empty()) {
+      //Check active date. If inactive more than 30 day -> Mark inactive
+      int inactive_date = getInactiveDate( user_info.message_data.back().first.substr(0,10) );
+      std::string active_status = "Inactive";
+      if (inactive_date < 30) {
+        active_status = "Active";
+      }
       // Write the latest message date
-      outFile << user_info.message_data.back().first << ","
+      outFile << user_info.message_data.back().first.substr(0,10) << ","
               << "\"" + user_info.message_data.back().second + "\"" << ","
-              << "Active\n";
+              << active_status << "\n";
     } else {
       outFile << "None," // Handle users with no messages
               << "None,"
