@@ -2,6 +2,7 @@
 #include <fstream>
 #include <cpr/cpr.h>
 #include <cpr/response.h>
+#include <iterator>
 #include <nlohmann/json.hpp>
 #include <string>
 #include <unordered_map>
@@ -12,7 +13,8 @@ struct UserInfo {
   std::string username = "NOT FOUND";
   std::string global_name = "NOT FOUND";
   std::string joined_date = "1970-01-01"; //Default to Unix epoch
-  std::vector<std::string> message_dates = {};
+  //message table: each element has date as key
+  std::vector<std::pair<std::string, std::string>> message_data = {};
 };
 
 
@@ -111,9 +113,9 @@ int main (int argc, char *argv[]) {
         std::cout << "Username: " << user_info.username << "\n";
         std::cout << "Global Name: " << user_info.global_name << "\n";
         std::cout << "Joined Date: " << user_info.joined_date << "\n";
-        std::cout << "Message Date:\n";
-        for (const auto& message_dates : user_info.message_dates) {
-            std::cout << "  - " << message_dates << "\n";
+        std::cout << "Message Data:\n";
+        for (const auto & message : user_info.message_data) {
+            std::cout << "  - " << message.first << " | " << message.second << "\n";
         }
         std::cout << "------------------------\n";
       }
@@ -193,17 +195,24 @@ int main (int argc, char *argv[]) {
                 record_date = message["timestamp"];
               }
               std::string record_date_short = record_date.substr(0,10);
+
+              std::string record_content = "Unknown";
+              if (message.contains("content")) {
+                record_content = message["content"];
+              }
               
               //Found new user but this should not happen
               if (user_db.find(record_usrname) == user_db.end()) {
 
                 struct UserInfo new_user;
                 new_user.username = record_usrname;
-                new_user.message_dates.push_back(record_date_short);
+               // new_user.global_name = record_glob_name;
+                new_user.message_data.push_back({record_date_short, record_content});
+                //add new user into db
                 user_db.insert({record_usrname, new_user});
 
               } else { //user is already in db
-                user_db[record_usrname].message_dates.push_back(record_date_short); //Append more dates
+                user_db[record_usrname].message_data.push_back({record_date_short,record_content}); //Append more dates
               }
             }
 
@@ -228,7 +237,7 @@ int main (int argc, char *argv[]) {
     }
     
 
-    // Open a file for writing
+    // Print log
     std::ofstream outputFile("server_log.json");
     if (!outputFile.is_open()) {
       std::cerr << "Error: Could not open the file for writing!" << std::endl;
@@ -249,13 +258,30 @@ int main (int argc, char *argv[]) {
     std::cout << "Global Name: " << user_info.global_name << "\n";
     std::cout << "Joined Date: " << user_info.joined_date << "\n";
     std::cout << "Message Dates:\n";
-    for (const auto& message_dates : user_info.message_dates) {
-        std::cout << "  - " << message_dates << "\n";
+    for (const auto& message : user_info.message_data) {
+        std::cout << "  - " << message.first << " | " << message.second << "\n";
     }
     std::cout << "------------------------\n";
+  }  
+
+  //NOTE:Print result to Text file
+  std::ofstream textFile("final_log.txt");
+  if (!textFile.is_open()) {
+    std::cerr << "Error: Could not open final_log.txt" << std::endl;
   }
 
-  //NOTE: EXPORT Result to file
+  for (const auto & [username, user_info] : user_db) {
+    textFile << "Username: " << user_info.username << "\n";
+    textFile << "Global Name: " << user_info.global_name << "\n";
+    textFile << "Joined Date: " << user_info.joined_date << "\n";
+    textFile << "Message Dates:\n";
+    for (const auto& message : user_info.message_data) {
+        textFile << "  - " << message.first << " | " << message.second << "\n";
+    }
+    textFile << "------------------------\n";
+  }
+
+  //NOTE: EXPORT Result to CSV file
   std::ofstream outFile("final_log.csv", std::ios::app | std::ios::out);
   if (!outFile.is_open()) {
     std::cerr << "Error: Could not open the file" << std::endl;
@@ -263,23 +289,26 @@ int main (int argc, char *argv[]) {
   }
 
   //CSV Header
-  outFile << "User Name,Global Name,Joined Date,Lastest Message Date,Status\n";
+  outFile << "User Name,Global Name,Joined Date,Lastest Message Date,Message Content,Status\n";
 
   for (auto& [username, user_info] : user_db) {
-    // Sort the message_dates vector
-    std::sort(user_info.message_dates.begin(), user_info.message_dates.end());
-
     // Write user details and the latest message date
     outFile << user_info.username << ","
             << user_info.global_name << ","
             << user_info.joined_date << ",";
     
-    if (!user_info.message_dates.empty()) {
+    // Sort the message_data vector by date
+    std::sort(user_info.message_data.begin(), user_info.message_data.end(), 
+              [](const auto & a, const auto & b) { return a.first < b.first;});
+
+    if (!user_info.message_data.empty()) {
       // Write the latest message date
-      outFile << user_info.message_dates.back() << ","
+      outFile << user_info.message_data.back().first << ","
+              << user_info.message_data.back().second << ","
               << "Active\n";
     } else {
       outFile << "None," // Handle users with no messages
+              << "None,"
               << "Inactive\n";
     }
   }
