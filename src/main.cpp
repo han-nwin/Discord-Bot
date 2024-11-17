@@ -280,9 +280,11 @@ int main (int argc, char *argv[]) {
     }
     textFile << "------------------------\n";
   }
+  //close text file
+  textFile.close();
 
   //NOTE: EXPORT Result to CSV file
-  std::ofstream outFile("final_log.csv", std::ios::app | std::ios::out);
+  std::ofstream outFile("final_log.csv");
   if (!outFile.is_open()) {
     std::cerr << "Error: Could not open the file" << std::endl;
     return 1;
@@ -304,7 +306,7 @@ int main (int argc, char *argv[]) {
     if (!user_info.message_data.empty()) {
       // Write the latest message date
       outFile << user_info.message_data.back().first << ","
-              << user_info.message_data.back().second << ","
+              << "\"" + user_info.message_data.back().second + "\"" << ","
               << "Active\n";
     } else {
       outFile << "None," // Handle users with no messages
