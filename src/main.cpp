@@ -326,19 +326,19 @@ int main (int argc, char *argv[]) {
     outFile << user_info.username << ","
             << user_info.global_name << ","
             << user_info.joined_date << ",";
-    
+   /** 
     // Sort the message_data vector by date
     std::sort(user_info.message_data.begin(), user_info.message_data.end(), 
               [](const auto & a, const auto & b) { return a.first < b.first;});//NOTE: Learn Lambda function here
 
-  /**
+  */
     struct {
       bool operator() (const std::pair<std::string, std::string> & a, const std::pair<std::string, std::string> & b) {
         return a.first < b.first;
       }
     } customLess;
     std::sort(user_info.message_data.begin(), user_info.message_data.end(), customLess); //NOTE: Comparision using struct 
-    */
+    
 
     if (!user_info.message_data.empty()) {
       //Check active date. If inactive more than 30 day -> Mark inactive
