@@ -17,6 +17,7 @@ struct UserInfo {
   std::string joined_date = "1970-01-01"; //Default to Unix epoch
   //message array: each pair has the first one as key
   std::vector<std::pair<std::string, std::string>> message_data = {};
+  std::string role = "";
 };
 
 int getInactiveDate (const std::string & last_date_str) {
@@ -68,6 +69,7 @@ int main (int argc, char *argv[]) {
   const std::string GUILD_ID = "1082338211973566605";
   const std::string GUILD_USER_URL = "https://discord.com/api/v10/guilds/" + GUILD_ID +"/members?limit=1000";
   const std::string GUILD_CHANNEL_URL = "https://discord.com/api/v10/guilds/" + GUILD_ID +"/channels";
+  const std::string PREMIUM_ROLE_ID = "1264793441737375766";
 
   //Hashmap to store user_info struct elements with username as key
   std::unordered_map<std::string, UserInfo> user_db;
@@ -113,6 +115,7 @@ int main (int argc, char *argv[]) {
     for (const auto & member : json_response) {
 
       struct UserInfo new_user;
+
       std::string global_name = "Unknown";
 
       if (member.contains("user") && member["user"].contains("global_name") && !member["user"]["global_name"].is_null()) {
@@ -128,9 +131,17 @@ int main (int argc, char *argv[]) {
       }
       std::string join_date_short = join_date.substr(0,10);
 
+      std::string role = "";
+      if (member.contains("roles") && member["roles"].is_array() 
+              && std::find(member["roles"].begin(), member["roles"].end(), PREMIUM_ROLE_ID) != member["roles"].end()) {
+        role = "PREMIUM_ROLE";
+
+      }
+
       new_user.username = username;
       new_user.global_name = global_name;
       new_user.joined_date = join_date_short;
+      new_user.role = role;
       
       //If found new user add to hashmap
       if (user_db.find(username) == user_db.end()) {
@@ -141,6 +152,7 @@ int main (int argc, char *argv[]) {
         std::cout << "Username: " << user_info.username << "\n";
         std::cout << "Global Name: " << user_info.global_name << "\n";
         std::cout << "Joined Date: " << user_info.joined_date << "\n";
+        std::cout << "Role: " << user_info.role << "\n";
         std::cout << "Message Data:\n";
         for (const auto & message : user_info.message_data) {
             std::cout << "  - " << message.first << " | " << message.second << "\n";
@@ -285,6 +297,7 @@ int main (int argc, char *argv[]) {
     std::cout << "Username: " << user_info.username << "\n";
     std::cout << "Global Name: " << user_info.global_name << "\n";
     std::cout << "Joined Date: " << user_info.joined_date << "\n";
+    std::cout << "Role: " << user_info.role << "\n";
     std::cout << "Message Dates:\n";
     for (const auto& message : user_info.message_data) {
         std::cout << "  - " << message.first << " | " << message.second << "\n";
@@ -302,6 +315,7 @@ int main (int argc, char *argv[]) {
     textFile << "Username: " << user_info.username << "\n";
     textFile << "Global Name: " << user_info.global_name << "\n";
     textFile << "Joined Date: " << user_info.joined_date << "\n";
+    textFile << "Role: " << user_info.role << "\n";
     textFile << "Message Dates:\n";
     for (const auto& message : user_info.message_data) {
         textFile << "  - " << message.first.substr(0,10) << " | " << message.second << "\n";
@@ -319,13 +333,14 @@ int main (int argc, char *argv[]) {
   }
 
   //CSV Header
-  outFile << "User Name,Global Name,Joined Date,Latest Message Date,Message Content,Status(last 30days)\n";
+  outFile << "User Name,Global Name,Joined Date,Role,Latest Message Date,Message Content,Status(last 30days)\n";
 
   for (auto& [username, user_info] : user_db) {
     // Write user details and the latest message date
     outFile << user_info.username << ","
             << user_info.global_name << ","
-            << user_info.joined_date << ",";
+            << user_info.joined_date << ","
+            << user_info.role<< ",";
    /** 
     // Sort the message_data vector by date
     std::sort(user_info.message_data.begin(), user_info.message_data.end(), 

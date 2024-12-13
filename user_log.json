@@ -508,6 +508,37 @@
         "communication_disabled_until": null,
         "deaf": false,
         "flags": 0,
+        "joined_at": "2024-12-09T19:04:53.716000+00:00",
+        "mute": false,
+        "nick": null,
+        "pending": false,
+        "premium_since": null,
+        "roles": [
+            "1264793441737375766"
+        ],
+        "unusual_dm_activity_until": null,
+        "user": {
+            "accent_color": null,
+            "avatar": "69882ac50a7078d8d9542904f5962d8f",
+            "avatar_decoration_data": null,
+            "banner": null,
+            "banner_color": null,
+            "clan": null,
+            "discriminator": "0",
+            "flags": 0,
+            "global_name": "NaMMiE",
+            "id": "325816194244280341",
+            "primary_guild": null,
+            "public_flags": 0,
+            "username": "nammie817"
+        }
+    },
+    {
+        "avatar": null,
+        "banner": null,
+        "communication_disabled_until": null,
+        "deaf": false,
+        "flags": 0,
         "joined_at": "2024-10-28T16:21:25.920000+00:00",
         "mute": false,
         "nick": null,
@@ -1674,7 +1705,8 @@
         "pending": false,
         "premium_since": null,
         "roles": [
-            "1285630264567009340"
+            "1285630264567009340",
+            "1264793441737375766"
         ],
         "unusual_dm_activity_until": null,
         "user": {
@@ -3360,7 +3392,7 @@
         "unusual_dm_activity_until": null,
         "user": {
             "accent_color": null,
-            "avatar": "18e1f3cb2f0d330b88ac682f449078b9",
+            "avatar": "8795c209227cc140b0f968872a1904d8",
             "avatar_decoration_data": null,
             "banner": null,
             "banner_color": null,
@@ -5968,7 +6000,7 @@
         "pending": false,
         "premium_since": null,
         "roles": [
-            "1264793441737375766"
+            "1285630264567009340"
         ],
         "unusual_dm_activity_until": null,
         "user": {
@@ -6665,6 +6697,37 @@
             "primary_guild": null,
             "public_flags": 0,
             "username": "julesfarr_23763"
+        }
+    },
+    {
+        "avatar": null,
+        "banner": null,
+        "communication_disabled_until": null,
+        "deaf": false,
+        "flags": 0,
+        "joined_at": "2024-12-09T16:03:37.280000+00:00",
+        "mute": false,
+        "nick": null,
+        "pending": false,
+        "premium_since": null,
+        "roles": [
+            "1264793441737375766"
+        ],
+        "unusual_dm_activity_until": null,
+        "user": {
+            "accent_color": null,
+            "avatar": "35c377e27ea193b61804377c55a2fcbe",
+            "avatar_decoration_data": null,
+            "banner": null,
+            "banner_color": null,
+            "clan": null,
+            "discriminator": "0",
+            "flags": 0,
+            "global_name": "Vo Tuong Vy",
+            "id": "1315707371737190420",
+            "primary_guild": null,
+            "public_flags": 0,
+            "username": "votuongvy_50351"
         }
     }
 ]

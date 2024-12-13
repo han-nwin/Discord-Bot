@@ -7,7 +7,7 @@
             "name": "🌐"
         },
         "id": "1082338211973566608",
-        "last_message_id": "1313694848536023041",
+        "last_message_id": "1316502275367108679",
         "name": "general",
         "nsfw": false,
         "parent_id": "1201901391120187412",
@@ -95,7 +95,7 @@
             "name": "📅"
         },
         "id": "1097946965314113567",
-        "last_message_id": "1314492819095683092",
+        "last_message_id": "1317238198933524511",
         "name": "daily-journal",
         "nsfw": false,
         "parent_id": "1201901391120187412",
@@ -157,23 +157,23 @@
             "name": "❓"
         },
         "id": "1097947193614270534",
-        "last_message_id": "1314400523805265973",
+        "last_message_id": "1316633856442630154",
         "last_pin_timestamp": "2024-08-16T17:30:03+00:00",
         "name": "active-support-qa",
         "nsfw": false,
         "parent_id": "1263937276480585778",
         "permission_overwrites": [
             {
-                "allow": "0",
-                "deny": "1049600",
-                "id": "1082338211973566605",
-                "type": 0
-            },
-            {
                 "allow": "1049600",
                 "deny": "0",
                 "id": "1066465177140215928",
                 "type": 1
+            },
+            {
+                "allow": "0",
+                "deny": "1049600",
+                "id": "1082338211973566605",
+                "type": 0
             },
             {
                 "allow": "1049600",
@@ -196,7 +196,7 @@
             "name": "🧠"
         },
         "id": "1097947244617019422",
-        "last_message_id": "1314464396252155925",
+        "last_message_id": "1316843771903873134",
         "last_pin_timestamp": "2023-08-04T03:17:28+00:00",
         "name": "shifu-mindset",
         "nsfw": false,
@@ -259,15 +259,15 @@
             "name": "🏋️"
         },
         "id": "1097947266922328136",
-        "last_message_id": "1314639453511487578",
+        "last_message_id": "1317163473570103318",
         "name": "shifu-fitness",
         "nsfw": false,
         "parent_id": "1201901391120187412",
         "permission_overwrites": [
             {
                 "allow": "0",
-                "deny": "1024",
-                "id": "1082338211973566605",
+                "deny": "0",
+                "id": "1204787920947646475",
                 "type": 0
             },
             {
@@ -278,8 +278,8 @@
             },
             {
                 "allow": "0",
-                "deny": "0",
-                "id": "1204787920947646475",
+                "deny": "1024",
+                "id": "1082338211973566605",
                 "type": 0
             },
             {
@@ -359,7 +359,7 @@
             "name": "👋"
         },
         "id": "1098448325356826775",
-        "last_message_id": "1314281911329361961",
+        "last_message_id": "1314798548159827988",
         "name": "mentee-intro",
         "nsfw": false,
         "parent_id": "1201901391120187412",
@@ -421,15 +421,15 @@
             "name": "🏆"
         },
         "id": "1104064118987702312",
-        "last_message_id": "1314660364582916228",
+        "last_message_id": "1317227070924914718",
         "name": "wins",
         "nsfw": false,
         "parent_id": "1201901391120187412",
         "permission_overwrites": [
             {
                 "allow": "0",
-                "deny": "0",
-                "id": "1204787920947646475",
+                "deny": "1024",
+                "id": "1082338211973566605",
                 "type": 0
             },
             {
@@ -440,8 +440,8 @@
             },
             {
                 "allow": "0",
-                "deny": "1024",
-                "id": "1082338211973566605",
+                "deny": "0",
+                "id": "1204787920947646475",
                 "type": 0
             },
             {
@@ -483,15 +483,15 @@
             "name": "🎁"
         },
         "id": "1106798032437125130",
-        "last_message_id": "1312426966313341121",
+        "last_message_id": "1315513898677567600",
         "name": "shifu-charities",
         "nsfw": false,
         "parent_id": "1201901391120187412",
         "permission_overwrites": [
             {
                 "allow": "0",
-                "deny": "1024",
-                "id": "1082338211973566605",
+                "deny": "0",
+                "id": "1204787920947646475",
                 "type": 0
             },
             {
@@ -502,8 +502,8 @@
             },
             {
                 "allow": "0",
-                "deny": "0",
-                "id": "1204787920947646475",
+                "deny": "1024",
+                "id": "1082338211973566605",
                 "type": 0
             },
             {
@@ -545,7 +545,7 @@
             "name": "📄"
         },
         "id": "1148311414973411471",
-        "last_message_id": "1314360805545869332",
+        "last_message_id": "1317092168304951306",
         "last_pin_timestamp": "2024-05-08T18:28:31+00:00",
         "name": "resources",
         "nsfw": false,
@@ -586,7 +586,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1199034625696219227",
-        "last_message_id": "1312436568908369992",
+        "last_message_id": "1316816347061293158",
         "name": "workspace",
         "nsfw": false,
         "parent_id": "1285633930242031676",
@@ -600,13 +600,13 @@
             {
                 "allow": "1024",
                 "deny": "0",
-                "id": "856436897324728331",
+                "id": "993770740597936160",
                 "type": 1
             },
             {
                 "allow": "1024",
                 "deny": "0",
-                "id": "993770740597936160",
+                "id": "856436897324728331",
                 "type": 1
             },
             {
@@ -721,7 +721,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1199035339612897310",
-        "last_message_id": "1314432100887429163",
+        "last_message_id": "1316904979033755668",
         "name": "class-schedule",
         "nsfw": false,
         "parent_id": "1285633930242031676",
@@ -741,13 +741,13 @@
             {
                 "allow": "1024",
                 "deny": "0",
-                "id": "856436897324728331",
+                "id": "337800821049917442",
                 "type": 1
             },
             {
                 "allow": "1024",
                 "deny": "0",
-                "id": "337800821049917442",
+                "id": "856436897324728331",
                 "type": 1
             },
             {
@@ -819,7 +819,7 @@
             {
                 "allow": "1024",
                 "deny": "0",
-                "id": "1100405164432707645",
+                "id": "1271018123725770762",
                 "type": 1
             },
             {
@@ -831,19 +831,19 @@
             {
                 "allow": "1024",
                 "deny": "0",
-                "id": "1271018123725770762",
-                "type": 1
-            },
-            {
-                "allow": "1024",
-                "deny": "0",
-                "id": "751494779417788436",
+                "id": "1100405164432707645",
                 "type": 1
             },
             {
                 "allow": "1024",
                 "deny": "0",
                 "id": "728408607510626444",
+                "type": 1
+            },
+            {
+                "allow": "1024",
+                "deny": "0",
+                "id": "751494779417788436",
                 "type": 1
             },
             {
@@ -916,8 +916,8 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1199035421343092946",
-        "last_message_id": "1314409897273720902",
-        "last_pin_timestamp": "2024-12-02T14:01:38+00:00",
+        "last_message_id": "1317165172971933837",
+        "last_pin_timestamp": "2024-12-09T14:01:48+00:00",
         "name": "class-notification",
         "nsfw": false,
         "parent_id": "1285633930242031676",
@@ -1055,6 +1055,12 @@
                 "type": 1
             },
             {
+                "allow": "1024",
+                "deny": "0",
+                "id": "1189820650920104016",
+                "type": 1
+            },
+            {
                 "allow": "0",
                 "deny": "1024",
                 "id": "1082338211973566605",
@@ -1069,13 +1075,13 @@
             {
                 "allow": "1024",
                 "deny": "0",
-                "id": "1304568730658799697",
+                "id": "579505763089776648",
                 "type": 1
             },
             {
                 "allow": "1024",
                 "deny": "0",
-                "id": "579505763089776648",
+                "id": "1304568730658799697",
                 "type": 1
             },
             {
@@ -1122,7 +1128,7 @@
             "name": "📣"
         },
         "id": "1200147993614090351",
-        "last_message_id": "1314445400962240625",
+        "last_message_id": "1317216517775163474",
         "name": "announcements",
         "nsfw": false,
         "parent_id": "1201901391120187412",
@@ -1185,8 +1191,8 @@
         "permission_overwrites": [
             {
                 "allow": "0",
-                "deny": "1024",
-                "id": "1082338211973566605",
+                "deny": "0",
+                "id": "1204787920947646475",
                 "type": 0
             },
             {
@@ -1197,8 +1203,8 @@
             },
             {
                 "allow": "0",
-                "deny": "0",
-                "id": "1204787920947646475",
+                "deny": "1024",
+                "id": "1082338211973566605",
                 "type": 0
             },
             {
@@ -1237,22 +1243,22 @@
             "name": "📜"
         },
         "id": "1201903460035858432",
-        "last_message_id": "1313281687307685918",
+        "last_message_id": "1315742644982386770",
         "name": "legal-stuff",
         "nsfw": false,
         "parent_id": "1263937276480585778",
         "permission_overwrites": [
             {
-                "allow": "1049600",
-                "deny": "0",
-                "id": "1066465177140215928",
-                "type": 1
-            },
-            {
                 "allow": "0",
                 "deny": "1049600",
                 "id": "1082338211973566605",
                 "type": 0
+            },
+            {
+                "allow": "1049600",
+                "deny": "0",
+                "id": "1066465177140215928",
+                "type": 1
             },
             {
                 "allow": "1049600",
@@ -1275,15 +1281,15 @@
             "name": "💬"
         },
         "id": "1201903521977606154",
-        "last_message_id": "1314676997523374141",
+        "last_message_id": "1317181406438359110",
         "name": "casual-chat",
         "nsfw": false,
         "parent_id": "1201901391120187412",
         "permission_overwrites": [
             {
                 "allow": "0",
-                "deny": "1024",
-                "id": "1082338211973566605",
+                "deny": "0",
+                "id": "1204787920947646475",
                 "type": 0
             },
             {
@@ -1294,8 +1300,8 @@
             },
             {
                 "allow": "0",
-                "deny": "0",
-                "id": "1204787920947646475",
+                "deny": "1024",
+                "id": "1082338211973566605",
                 "type": 0
             },
             {
@@ -1333,23 +1339,23 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1224760938616459304",
-        "last_message_id": "1314419050025062430",
+        "last_message_id": "1315755883011248128",
         "last_pin_timestamp": "2024-12-05T15:24:52+00:00",
         "name": "launch-support",
         "nsfw": false,
         "parent_id": "1263937276480585778",
         "permission_overwrites": [
             {
-                "allow": "0",
-                "deny": "1049600",
-                "id": "1082338211973566605",
-                "type": 0
-            },
-            {
                 "allow": "1049600",
                 "deny": "0",
                 "id": "1066465177140215928",
                 "type": 1
+            },
+            {
+                "allow": "0",
+                "deny": "1049600",
+                "id": "1082338211973566605",
+                "type": 0
             },
             {
                 "allow": "1049600",
@@ -1371,16 +1377,16 @@
         "parent_id": null,
         "permission_overwrites": [
             {
-                "allow": "0",
-                "deny": "1049600",
-                "id": "1082338211973566605",
-                "type": 0
-            },
-            {
                 "allow": "1049600",
                 "deny": "0",
                 "id": "1066465177140215928",
                 "type": 1
+            },
+            {
+                "allow": "0",
+                "deny": "1049600",
+                "id": "1082338211973566605",
+                "type": 0
             },
             {
                 "allow": "1049600",
@@ -1424,16 +1430,16 @@
         "parent_id": "1263937276480585778",
         "permission_overwrites": [
             {
-                "allow": "0",
-                "deny": "1049600",
-                "id": "1082338211973566605",
-                "type": 0
-            },
-            {
                 "allow": "1049600",
                 "deny": "0",
                 "id": "1066465177140215928",
                 "type": 1
+            },
+            {
+                "allow": "0",
+                "deny": "1049600",
+                "id": "1082338211973566605",
+                "type": 0
             },
             {
                 "allow": "1049600",
@@ -1451,7 +1457,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1265420354696773683",
-        "last_message_id": "1314654968246042664",
+        "last_message_id": "1317154526368890911",
         "last_pin_timestamp": "2024-10-18T03:44:37+00:00",
         "name": "questions-answers",
         "nsfw": false,
@@ -1459,8 +1465,8 @@
         "permission_overwrites": [
             {
                 "allow": "0",
-                "deny": "0",
-                "id": "1204787920947646475",
+                "deny": "1024",
+                "id": "1082338211973566605",
                 "type": 0
             },
             {
@@ -1471,8 +1477,8 @@
             },
             {
                 "allow": "0",
-                "deny": "1024",
-                "id": "1082338211973566605",
+                "deny": "0",
+                "id": "1204787920947646475",
                 "type": 0
             },
             {
@@ -1552,7 +1558,19 @@
             {
                 "allow": "1049600",
                 "deny": "0",
-                "id": "1031622651468333076",
+                "id": "1264793441737375766",
+                "type": 0
+            },
+            {
+                "allow": "0",
+                "deny": "1024",
+                "id": "1082338211973566605",
+                "type": 0
+            },
+            {
+                "allow": "1024",
+                "deny": "0",
+                "id": "856436897324728331",
                 "type": 1
             },
             {
@@ -1562,22 +1580,10 @@
                 "type": 1
             },
             {
-                "allow": "1024",
-                "deny": "0",
-                "id": "856436897324728331",
-                "type": 1
-            },
-            {
-                "allow": "0",
-                "deny": "1024",
-                "id": "1082338211973566605",
-                "type": 0
-            },
-            {
                 "allow": "1049600",
                 "deny": "0",
-                "id": "1264793441737375766",
-                "type": 0
+                "id": "1031622651468333076",
+                "type": 1
             }
         ],
         "position": 26,
@@ -1595,8 +1601,8 @@
             {
                 "allow": "1049600",
                 "deny": "0",
-                "id": "1031622651468333076",
-                "type": 1
+                "id": "1264793441737375766",
+                "type": 0
             },
             {
                 "allow": "0",
@@ -1613,8 +1619,8 @@
             {
                 "allow": "1049600",
                 "deny": "0",
-                "id": "1264793441737375766",
-                "type": 0
+                "id": "1031622651468333076",
+                "type": 1
             }
         ],
         "position": 2,
@@ -1645,9 +1651,11 @@
     {
         "flags": 0,
         "guild_id": "1082338211973566605",
-        "id": "1293714070855221289",
-        "name": "PRIVATE MESSAGE",
-        "parent_id": null,
+        "id": "1293716334797914256",
+        "last_message_id": "1314020643192180758",
+        "name": "richard-kong-9-25",
+        "nsfw": false,
+        "parent_id": "1310726961676681306",
         "permission_overwrites": [
             {
                 "allow": "0",
@@ -1656,44 +1664,19 @@
                 "type": 0
             },
             {
-                "allow": "1049600",
+                "allow": "1024",
                 "deny": "0",
                 "id": "1294398748209709127",
                 "type": 0
-            }
-        ],
-        "position": 7,
-        "type": 4
-    },
-    {
-        "flags": 0,
-        "guild_id": "1082338211973566605",
-        "id": "1293716334797914256",
-        "last_message_id": "1314020643192180758",
-        "name": "richard-kong-9-25",
-        "nsfw": false,
-        "parent_id": "1293714070855221289",
-        "permission_overwrites": [
+            },
             {
                 "allow": "1024",
                 "deny": "0",
                 "id": "511824639467716610",
                 "type": 1
-            },
-            {
-                "allow": "1024",
-                "deny": "0",
-                "id": "1294398748209709127",
-                "type": 0
-            },
-            {
-                "allow": "0",
-                "deny": "1024",
-                "id": "1082338211973566605",
-                "type": 0
             }
         ],
-        "position": 82,
+        "position": 56,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -1702,7 +1685,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1293716869597102091",
-        "last_message_id": "1314089328816947200",
+        "last_message_id": "1316165251653304320",
         "name": "minh-ngo-8-25",
         "nsfw": false,
         "parent_id": "1310726961676681306",
@@ -1726,7 +1709,7 @@
                 "type": 0
             }
         ],
-        "position": 38,
+        "position": 40,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -1759,7 +1742,7 @@
                 "type": 1
             }
         ],
-        "position": 39,
+        "position": 41,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -1771,7 +1754,7 @@
         "last_message_id": "1314052247432466484",
         "name": "joseph-mai-9-25",
         "nsfw": false,
-        "parent_id": "1293714070855221289",
+        "parent_id": "1310726961676681306",
         "permission_overwrites": [
             {
                 "allow": "0",
@@ -1792,7 +1775,7 @@
                 "type": 1
             }
         ],
-        "position": 83,
+        "position": 57,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -1837,7 +1820,7 @@
                 "type": 0
             }
         ],
-        "position": 40,
+        "position": 42,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -1870,7 +1853,7 @@
                 "type": 0
             }
         ],
-        "position": 41,
+        "position": 43,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -1879,7 +1862,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1293724509727359077",
-        "last_message_id": "1312961722071650368",
+        "last_message_id": "1316415626964897872",
         "name": "jennifer-nguyen-1-25",
         "nsfw": false,
         "parent_id": "1310727185941659648",
@@ -1903,7 +1886,7 @@
                 "type": 1
             }
         ],
-        "position": 61,
+        "position": 83,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -1912,10 +1895,10 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1293726065780461619",
-        "last_message_id": "1314646144109908020",
+        "last_message_id": "1317239007935201351",
         "name": "olesia-hall-4-25",
         "nsfw": false,
-        "parent_id": "1310727082212462603",
+        "parent_id": "1310727185941659648",
         "permission_overwrites": [
             {
                 "allow": "1024",
@@ -1936,7 +1919,7 @@
                 "type": 0
             }
         ],
-        "position": 49,
+        "position": 81,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -1945,10 +1928,10 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1293760626489036824",
-        "last_message_id": "1314465465908858930",
+        "last_message_id": "1316582320274411622",
         "name": "olivea-kacy-nguyen-11-24",
         "nsfw": false,
-        "parent_id": "1293714070855221289",
+        "parent_id": "1310726961676681306",
         "permission_overwrites": [
             {
                 "allow": "0",
@@ -1969,7 +1952,7 @@
                 "type": 1
             }
         ],
-        "position": 84,
+        "position": 58,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -2002,7 +1985,7 @@
                 "type": 1
             }
         ],
-        "position": 59,
+        "position": 78,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -2011,7 +1994,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1293765636366925958",
-        "last_message_id": "1308590438822969344",
+        "last_message_id": "1316170092991483964",
         "name": "an-nguyen-2-25",
         "nsfw": false,
         "parent_id": "1310727185941659648",
@@ -2035,7 +2018,7 @@
                 "type": 0
             }
         ],
-        "position": 60,
+        "position": 82,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -2044,10 +2027,10 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1293765699453587526",
-        "last_message_id": "1314450198709276733",
+        "last_message_id": "1316182444575031297",
         "name": "giao-mac-8-25",
         "nsfw": false,
-        "parent_id": "1293714070855221289",
+        "parent_id": "1310726961676681306",
         "permission_overwrites": [
             {
                 "allow": "1024",
@@ -2068,7 +2051,7 @@
                 "type": 0
             }
         ],
-        "position": 85,
+        "position": 59,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -2077,10 +2060,10 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1293765812103938048",
-        "last_message_id": "1314308208298299504",
+        "last_message_id": "1316075439357431808",
         "name": "nhung-le-6-24",
         "nsfw": false,
-        "parent_id": "1293714070855221289",
+        "parent_id": "1310726961676681306",
         "permission_overwrites": [
             {
                 "allow": "0",
@@ -2101,7 +2084,7 @@
                 "type": 1
             }
         ],
-        "position": 86,
+        "position": 60,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -2110,10 +2093,10 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1293766022310137887",
-        "last_message_id": "1314055462370676826",
+        "last_message_id": "1316481376714887179",
         "name": "tara-le-nguyen-9-25",
         "nsfw": false,
-        "parent_id": "1293714070855221289",
+        "parent_id": "1310726961676681306",
         "permission_overwrites": [
             {
                 "allow": "1024",
@@ -2134,7 +2117,7 @@
                 "type": 0
             }
         ],
-        "position": 87,
+        "position": 61,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -2143,7 +2126,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1293766099254644767",
-        "last_message_id": "1314640251188412467",
+        "last_message_id": "1316384091897204858",
         "name": "sally-koh-8-25",
         "nsfw": false,
         "parent_id": "1310726961676681306",
@@ -2167,7 +2150,7 @@
                 "type": 0
             }
         ],
-        "position": 37,
+        "position": 39,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -2176,10 +2159,10 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1293766226882986087",
-        "last_message_id": "1314021199654682634",
+        "last_message_id": "1316183857514680351",
         "name": "david-ice-10-25",
         "nsfw": false,
-        "parent_id": "1293714070855221289",
+        "parent_id": "1310726961676681306",
         "permission_overwrites": [
             {
                 "allow": "0",
@@ -2200,7 +2183,7 @@
                 "type": 1
             }
         ],
-        "position": 88,
+        "position": 62,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -2209,7 +2192,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1293766519309860896",
-        "last_message_id": "1311823186706563073",
+        "last_message_id": "1316170290945855499",
         "name": "tricia-peregrino-4-25",
         "nsfw": false,
         "parent_id": "1310727185941659648",
@@ -2233,7 +2216,7 @@
                 "type": 0
             }
         ],
-        "position": 62,
+        "position": 84,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -2256,17 +2239,17 @@
             {
                 "allow": "1024",
                 "deny": "0",
-                "id": "1294398748209709127",
-                "type": 0
+                "id": "1224111899873120308",
+                "type": 1
             },
             {
                 "allow": "1024",
                 "deny": "0",
-                "id": "1224111899873120308",
-                "type": 1
+                "id": "1294398748209709127",
+                "type": 0
             }
         ],
-        "position": 68,
+        "position": 90,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -2275,7 +2258,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1293766675333779566",
-        "last_message_id": "1314651862640623676",
+        "last_message_id": "1316881091876884510",
         "name": "thong-thai-1-25",
         "nsfw": false,
         "parent_id": "1310727082212462603",
@@ -2299,7 +2282,7 @@
                 "type": 0
             }
         ],
-        "position": 50,
+        "position": 69,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -2308,10 +2291,10 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1293767845863227412",
-        "last_message_id": "1314146343538659358",
+        "last_message_id": "1317233120478756888",
         "name": "alice-svensson-10-25",
         "nsfw": false,
-        "parent_id": "1293714070855221289",
+        "parent_id": "1310726961676681306",
         "permission_overwrites": [
             {
                 "allow": "0",
@@ -2332,7 +2315,7 @@
                 "type": 0
             }
         ],
-        "position": 81,
+        "position": 37,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -2365,7 +2348,7 @@
                 "type": 1
             }
         ],
-        "position": 64,
+        "position": 86,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -2374,7 +2357,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1293768881797599232",
-        "last_message_id": "1308236806113853502",
+        "last_message_id": "1316170671214297108",
         "name": "prince-8-24",
         "nsfw": false,
         "parent_id": "1310727185941659648",
@@ -2398,7 +2381,7 @@
                 "type": 1
             }
         ],
-        "position": 66,
+        "position": 88,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -2407,7 +2390,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1293769128519143465",
-        "last_message_id": "1314019830650896417",
+        "last_message_id": "1316248263682424843",
         "name": "ioanna-9-24",
         "nsfw": false,
         "parent_id": "1310727082212462603",
@@ -2431,7 +2414,7 @@
                 "type": 1
             }
         ],
-        "position": 56,
+        "position": 75,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -2440,10 +2423,10 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1293785307128533022",
-        "last_message_id": "1314642442829566003",
+        "last_message_id": "1316251747236188260",
         "name": "janice-nguyen-9-25",
         "nsfw": false,
-        "parent_id": "1310726961676681306",
+        "parent_id": "1310727082212462603",
         "permission_overwrites": [
             {
                 "allow": "0",
@@ -2464,7 +2447,7 @@
                 "type": 1
             }
         ],
-        "position": 36,
+        "position": 66,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -2473,10 +2456,10 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1293931338751016980",
-        "last_message_id": "1314021282508967937",
+        "last_message_id": "1316067918420639907",
         "name": "khanh-tran-khannie-8-25",
         "nsfw": false,
-        "parent_id": "1293714070855221289",
+        "parent_id": "1310726961676681306",
         "permission_overwrites": [
             {
                 "allow": "1024",
@@ -2497,7 +2480,7 @@
                 "type": 0
             }
         ],
-        "position": 89,
+        "position": 53,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -2506,7 +2489,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1293931407110049894",
-        "last_message_id": "1313964838535561389",
+        "last_message_id": "1316590441075835000",
         "name": "chloe-tran-10-24",
         "nsfw": false,
         "parent_id": "1310727185941659648",
@@ -2530,7 +2513,7 @@
                 "type": 0
             }
         ],
-        "position": 65,
+        "position": 87,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -2539,7 +2522,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1293931572751503451",
-        "last_message_id": "1308436687008825395",
+        "last_message_id": "1316879096449597451",
         "name": "kazoua-yang-6-25",
         "nsfw": false,
         "parent_id": "1310727082212462603",
@@ -2563,7 +2546,7 @@
                 "type": 1
             }
         ],
-        "position": 53,
+        "position": 72,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -2572,7 +2555,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1294070013057044500",
-        "last_message_id": "1308894300742090902",
+        "last_message_id": "1316398519095136331",
         "name": "thy-pham-3-25",
         "nsfw": false,
         "parent_id": "1310727185941659648",
@@ -2596,7 +2579,7 @@
                 "type": 1
             }
         ],
-        "position": 67,
+        "position": 89,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -2605,7 +2588,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1294131585490358322",
-        "last_message_id": null,
+        "last_message_id": "1315787975531167895",
         "name": "uyen-ngo-12-24",
         "nsfw": false,
         "parent_id": "1310727082212462603",
@@ -2629,7 +2612,7 @@
                 "type": 0
             }
         ],
-        "position": 51,
+        "position": 70,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -2638,7 +2621,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1294334015553404981",
-        "last_message_id": "1304164735796645900",
+        "last_message_id": "1316173224131956777",
         "name": "diana-dee-4-24",
         "nsfw": false,
         "parent_id": "1310727185941659648",
@@ -2662,7 +2645,7 @@
                 "type": 1
             }
         ],
-        "position": 77,
+        "position": 99,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -2671,7 +2654,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1294344629277163654",
-        "last_message_id": "1312959392307478668",
+        "last_message_id": "1316568192092471368",
         "name": "tam-thai-11-24",
         "nsfw": false,
         "parent_id": "1310727185941659648",
@@ -2695,7 +2678,7 @@
                 "type": 1
             }
         ],
-        "position": 74,
+        "position": 96,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -2728,7 +2711,7 @@
                 "type": 1
             }
         ],
-        "position": 58,
+        "position": 77,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -2737,7 +2720,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1294347947516891207",
-        "last_message_id": "1314658685871460433",
+        "last_message_id": "1316859743859638393",
         "last_pin_timestamp": "2024-11-11T18:35:22+00:00",
         "name": "internal-team",
         "nsfw": false,
@@ -2750,16 +2733,16 @@
                 "type": 1
             },
             {
-                "allow": "0",
-                "deny": "1024",
-                "id": "1082338211973566605",
-                "type": 0
-            },
-            {
                 "allow": "1024",
                 "deny": "0",
                 "id": "1066465177140215928",
                 "type": 1
+            },
+            {
+                "allow": "0",
+                "deny": "1024",
+                "id": "1082338211973566605",
+                "type": 0
             },
             {
                 "allow": "1024",
@@ -2829,7 +2812,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1294422503619301426",
-        "last_message_id": "1314666183940767835",
+        "last_message_id": "1314697348693360701",
         "name": "raniel-capanzana-7-25",
         "nsfw": false,
         "parent_id": "1310727082212462603",
@@ -2853,7 +2836,7 @@
                 "type": 0
             }
         ],
-        "position": 54,
+        "position": 73,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -2862,7 +2845,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1294820612560126036",
-        "last_message_id": "1294865141795389460",
+        "last_message_id": "1316463656917274745",
         "name": "josie-nguyen-1-25",
         "nsfw": false,
         "parent_id": "1310727185941659648",
@@ -2886,7 +2869,7 @@
                 "type": 0
             }
         ],
-        "position": 73,
+        "position": 95,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -2895,7 +2878,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1294875227683295293",
-        "last_message_id": "1314015676528332830",
+        "last_message_id": "1316165288387149834",
         "name": "mirza-h-5-25",
         "nsfw": false,
         "parent_id": "1310726961676681306",
@@ -2919,7 +2902,7 @@
                 "type": 1
             }
         ],
-        "position": 42,
+        "position": 44,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -2952,7 +2935,7 @@
                 "type": 0
             }
         ],
-        "position": 57,
+        "position": 76,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -2985,7 +2968,7 @@
                 "type": 0
             }
         ],
-        "position": 69,
+        "position": 91,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -3018,7 +3001,7 @@
                 "type": 1
             }
         ],
-        "position": 55,
+        "position": 74,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -3117,7 +3100,7 @@
                 "type": 0
             }
         ],
-        "position": 93,
+        "position": 106,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -3169,7 +3152,7 @@
                 "type": 0
             }
         ],
-        "position": 94,
+        "position": 107,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -3191,9 +3174,9 @@
                 "type": 0
             },
             {
-                "allow": "0",
-                "deny": "1024",
-                "id": "1082338211973566605",
+                "allow": "1049600",
+                "deny": "0",
+                "id": "1204787920947646475",
                 "type": 0
             },
             {
@@ -3203,9 +3186,9 @@
                 "type": 0
             },
             {
-                "allow": "1049600",
-                "deny": "0",
-                "id": "1204787920947646475",
+                "allow": "0",
+                "deny": "1024",
+                "id": "1082338211973566605",
                 "type": 0
             },
             {
@@ -3221,7 +3204,7 @@
                 "type": 0
             }
         ],
-        "position": 95,
+        "position": 108,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -3243,9 +3226,9 @@
                 "type": 0
             },
             {
-                "allow": "0",
-                "deny": "1024",
-                "id": "1082338211973566605",
+                "allow": "1049600",
+                "deny": "0",
+                "id": "1204787920947646475",
                 "type": 0
             },
             {
@@ -3255,9 +3238,9 @@
                 "type": 0
             },
             {
-                "allow": "1049600",
-                "deny": "0",
-                "id": "1204787920947646475",
+                "allow": "0",
+                "deny": "1024",
+                "id": "1082338211973566605",
                 "type": 0
             },
             {
@@ -3273,7 +3256,7 @@
                 "type": 0
             }
         ],
-        "position": 96,
+        "position": 109,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -3295,9 +3278,9 @@
                 "type": 0
             },
             {
-                "allow": "1049600",
-                "deny": "0",
-                "id": "1204787920947646475",
+                "allow": "0",
+                "deny": "1024",
+                "id": "1082338211973566605",
                 "type": 0
             },
             {
@@ -3307,9 +3290,9 @@
                 "type": 0
             },
             {
-                "allow": "0",
-                "deny": "1024",
-                "id": "1082338211973566605",
+                "allow": "1049600",
+                "deny": "0",
+                "id": "1204787920947646475",
                 "type": 0
             },
             {
@@ -3325,7 +3308,7 @@
                 "type": 0
             }
         ],
-        "position": 97,
+        "position": 110,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -3341,9 +3324,9 @@
         "parent_id": "1295476716973850692",
         "permission_overwrites": [
             {
-                "allow": "0",
-                "deny": "1024",
-                "id": "1082338211973566605",
+                "allow": "1049600",
+                "deny": "0",
+                "id": "1204787920947646475",
                 "type": 0
             },
             {
@@ -3359,9 +3342,9 @@
                 "type": 1
             },
             {
-                "allow": "1049600",
-                "deny": "0",
-                "id": "1204787920947646475",
+                "allow": "0",
+                "deny": "1024",
+                "id": "1082338211973566605",
                 "type": 0
             },
             {
@@ -3389,7 +3372,7 @@
                 "type": 0
             }
         ],
-        "position": 98,
+        "position": 111,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -3440,7 +3423,7 @@
                 "type": 0
             }
         ],
-        "position": 99,
+        "position": 112,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -3491,7 +3474,7 @@
                 "type": 0
             }
         ],
-        "position": 100,
+        "position": 113,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -3500,7 +3483,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1295744290127085578",
-        "last_message_id": "1313366199106666496",
+        "last_message_id": "1317244717813075979",
         "name": "thu-nguyen-3-25",
         "nsfw": false,
         "parent_id": "1310727185941659648",
@@ -3524,7 +3507,7 @@
                 "type": 1
             }
         ],
-        "position": 78,
+        "position": 100,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -3533,7 +3516,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1295902387105431583",
-        "last_message_id": "1297985003421958185",
+        "last_message_id": "1316173132310122608",
         "name": "teresa-nguyen",
         "nsfw": false,
         "parent_id": "1310727185941659648",
@@ -3557,7 +3540,7 @@
                 "type": 1
             }
         ],
-        "position": 76,
+        "position": 98,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -3566,7 +3549,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1296234650389446699",
-        "last_message_id": "1309037485443256350",
+        "last_message_id": "1316172709876600903",
         "name": "kathy-2-25",
         "nsfw": false,
         "parent_id": "1310727185941659648",
@@ -3590,7 +3573,7 @@
                 "type": 1
             }
         ],
-        "position": 75,
+        "position": 97,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -3599,7 +3582,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1296555378695340103",
-        "last_message_id": "1314607826533879808",
+        "last_message_id": "1316572047383724114",
         "name": "mercede-siu-3-25",
         "nsfw": false,
         "parent_id": "1310727185941659648",
@@ -3613,17 +3596,17 @@
             {
                 "allow": "1024",
                 "deny": "0",
-                "id": "1294398748209709127",
-                "type": 0
+                "id": "1212209797345185883",
+                "type": 1
             },
             {
                 "allow": "1024",
                 "deny": "0",
-                "id": "1212209797345185883",
-                "type": 1
+                "id": "1294398748209709127",
+                "type": 0
             }
         ],
-        "position": 71,
+        "position": 93,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -3632,7 +3615,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1296838629112549416",
-        "last_message_id": "1314087084465590313",
+        "last_message_id": "1316222487738060861",
         "name": "truong-dang-10-25",
         "nsfw": false,
         "parent_id": "1310726961676681306",
@@ -3656,7 +3639,7 @@
                 "type": 1
             }
         ],
-        "position": 43,
+        "position": 45,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -3668,7 +3651,7 @@
         "last_message_id": "1314021364604076092",
         "name": "tuan-kiet-3-25",
         "nsfw": false,
-        "parent_id": "1293714070855221289",
+        "parent_id": "1310726961676681306",
         "permission_overwrites": [
             {
                 "allow": "0",
@@ -3689,7 +3672,7 @@
                 "type": 1
             }
         ],
-        "position": 90,
+        "position": 63,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -3701,7 +3684,7 @@
         "last_message_id": "1314021540387356672",
         "name": "scarlette-tran-9-25",
         "nsfw": false,
-        "parent_id": "1293714070855221289",
+        "parent_id": "1310726961676681306",
         "permission_overwrites": [
             {
                 "allow": "0",
@@ -3722,7 +3705,7 @@
                 "type": 1
             }
         ],
-        "position": 91,
+        "position": 64,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -3791,7 +3774,7 @@
         "last_message_id": "1314037514322972702",
         "name": "jose-robles-9-2025",
         "nsfw": false,
-        "parent_id": "1293714070855221289",
+        "parent_id": "1310726961676681306",
         "permission_overwrites": [
             {
                 "allow": "0",
@@ -3812,7 +3795,7 @@
                 "type": 1
             }
         ],
-        "position": 92,
+        "position": 105,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -3821,7 +3804,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1299076561949032589",
-        "last_message_id": "1314637702452346891",
+        "last_message_id": "1317239600988688415",
         "last_pin_timestamp": "2024-10-29T19:54:31+00:00",
         "name": "my-daily-top2s",
         "nsfw": false,
@@ -3855,7 +3838,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1299527396696915998",
-        "last_message_id": "1314369714633572362",
+        "last_message_id": "1317234299233374329",
         "name": "post-launch-members",
         "nsfw": false,
         "parent_id": "1201901391120187412",
@@ -3953,7 +3936,7 @@
             {
                 "allow": "1024",
                 "deny": "0",
-                "id": "1143664314180452352",
+                "id": "421531143066615808",
                 "type": 1
             },
             {
@@ -3965,19 +3948,19 @@
             {
                 "allow": "1024",
                 "deny": "0",
+                "id": "1195796082752491551",
+                "type": 1
+            },
+            {
+                "allow": "1024",
+                "deny": "0",
                 "id": "1066465177140215928",
                 "type": 1
             },
             {
                 "allow": "1024",
                 "deny": "0",
-                "id": "421531143066615808",
-                "type": 1
-            },
-            {
-                "allow": "1024",
-                "deny": "0",
-                "id": "1195796082752491551",
+                "id": "1143664314180452352",
                 "type": 1
             },
             {
@@ -4025,25 +4008,25 @@
             {
                 "allow": "1024",
                 "deny": "0",
-                "id": "1068754711458631810",
-                "type": 1
-            },
-            {
-                "allow": "1024",
-                "deny": "0",
                 "id": "454372168852045844",
                 "type": 1
             },
             {
                 "allow": "1024",
                 "deny": "0",
-                "id": "1213335800205414452",
+                "id": "1068754711458631810",
                 "type": 1
             },
             {
                 "allow": "1024",
                 "deny": "0",
-                "id": "691122008930648136",
+                "id": "1081993175327060139",
+                "type": 1
+            },
+            {
+                "allow": "1024",
+                "deny": "0",
+                "id": "1212149727316025355",
                 "type": 1
             },
             {
@@ -4061,13 +4044,13 @@
             {
                 "allow": "1024",
                 "deny": "0",
-                "id": "1212149727316025355",
+                "id": "691122008930648136",
                 "type": 1
             },
             {
                 "allow": "1024",
                 "deny": "0",
-                "id": "1081993175327060139",
+                "id": "1213335800205414452",
                 "type": 1
             },
             {
@@ -4097,13 +4080,13 @@
             {
                 "allow": "1024",
                 "deny": "0",
-                "id": "1105502704572305560",
+                "id": "851457671730430043",
                 "type": 1
             },
             {
                 "allow": "1024",
                 "deny": "0",
-                "id": "851457671730430043",
+                "id": "1105502704572305560",
                 "type": 1
             },
             {
@@ -4121,13 +4104,13 @@
             {
                 "allow": "1024",
                 "deny": "0",
-                "id": "1150467449897103370",
+                "id": "715730344510357526",
                 "type": 1
             },
             {
                 "allow": "1024",
                 "deny": "0",
-                "id": "715730344510357526",
+                "id": "1150467449897103370",
                 "type": 1
             },
             {
@@ -4155,10 +4138,10 @@
                 "type": 0
             },
             {
-                "allow": "1024",
+                "allow": "0",
                 "deny": "0",
-                "id": "1230862203146473472",
-                "type": 1
+                "id": "1284020566658908204",
+                "type": 0
             },
             {
                 "allow": "0",
@@ -4169,14 +4152,14 @@
             {
                 "allow": "1024",
                 "deny": "0",
-                "id": "796992713148989461",
+                "id": "1230862203146473472",
                 "type": 1
             },
             {
-                "allow": "0",
+                "allow": "1024",
                 "deny": "0",
-                "id": "1284020566658908204",
-                "type": 0
+                "id": "796992713148989461",
+                "type": 1
             },
             {
                 "allow": "1024",
@@ -4211,7 +4194,7 @@
             {
                 "allow": "1024",
                 "deny": "0",
-                "id": "1212159958976827482",
+                "id": "404267282219663362",
                 "type": 1
             },
             {
@@ -4223,14 +4206,14 @@
             {
                 "allow": "1024",
                 "deny": "0",
-                "id": "404267282219663362",
+                "id": "1212159958976827482",
                 "type": 1
             },
             {
-                "allow": "0",
-                "deny": "1024",
-                "id": "1082338211973566605",
-                "type": 0
+                "allow": "1024",
+                "deny": "0",
+                "id": "1167106129415909496",
+                "type": 1
             },
             {
                 "allow": "0",
@@ -4239,10 +4222,10 @@
                 "type": 0
             },
             {
-                "allow": "1024",
-                "deny": "0",
-                "id": "1167106129415909496",
-                "type": 1
+                "allow": "0",
+                "deny": "1024",
+                "id": "1082338211973566605",
+                "type": 0
             },
             {
                 "allow": "1024",
@@ -4266,10 +4249,10 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1299771696710025327",
-        "last_message_id": "1314633676512039004",
+        "last_message_id": "1314737454883934259",
         "name": "cathy-bui-10-25",
         "nsfw": false,
-        "parent_id": "1310726961676681306",
+        "parent_id": "1310727082212462603",
         "permission_overwrites": [
             {
                 "allow": "0",
@@ -4290,7 +4273,7 @@
                 "type": 1
             }
         ],
-        "position": 44,
+        "position": 65,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -4299,7 +4282,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1301230844601569331",
-        "last_message_id": "1314020293815173230",
+        "last_message_id": "1316170883722641489",
         "name": "lowell-3-25",
         "nsfw": false,
         "parent_id": "1310727185941659648",
@@ -4323,7 +4306,7 @@
                 "type": 0
             }
         ],
-        "position": 70,
+        "position": 92,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -4332,7 +4315,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1301263245272940618",
-        "last_message_id": "1314017500865888376",
+        "last_message_id": "1316165346176008314",
         "name": "aimy-ngo-4-25",
         "nsfw": false,
         "parent_id": "1310726961676681306",
@@ -4356,7 +4339,7 @@
                 "type": 1
             }
         ],
-        "position": 45,
+        "position": 46,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -4365,7 +4348,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1302009111894032484",
-        "last_message_id": "1308973605618716823",
+        "last_message_id": "1316171820386226218",
         "name": "anthony-nguyen-4-25",
         "nsfw": false,
         "parent_id": "1310727185941659648",
@@ -4389,7 +4372,7 @@
                 "type": 0
             }
         ],
-        "position": 72,
+        "position": 94,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -4397,31 +4380,8 @@
     {
         "flags": 0,
         "guild_id": "1082338211973566605",
-        "id": "1302272941337350236",
-        "name": "Private Message 2",
-        "parent_id": null,
-        "permission_overwrites": [
-            {
-                "allow": "0",
-                "deny": "1049600",
-                "id": "1082338211973566605",
-                "type": 0
-            },
-            {
-                "allow": "1049600",
-                "deny": "0",
-                "id": "1294398748209709127",
-                "type": 0
-            }
-        ],
-        "position": 8,
-        "type": 4
-    },
-    {
-        "flags": 0,
-        "guild_id": "1082338211973566605",
         "id": "1302273109361033319",
-        "last_message_id": "1314412087644127335",
+        "last_message_id": "1316979857040740417",
         "name": "tanner-smith-5-24",
         "nsfw": false,
         "parent_id": "1310727185941659648",
@@ -4445,7 +4405,7 @@
                 "type": 1
             }
         ],
-        "position": 63,
+        "position": 85,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -4454,7 +4414,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1302380662266921031",
-        "last_message_id": "1314018241890226207",
+        "last_message_id": "1316165398089039974",
         "name": "emma-and-judy-11-25",
         "nsfw": false,
         "parent_id": "1310726961676681306",
@@ -4484,7 +4444,7 @@
                 "type": 0
             }
         ],
-        "position": 46,
+        "position": 47,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -4493,7 +4453,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1304553666795016242",
-        "last_message_id": "1314019010777579651",
+        "last_message_id": "1316165430359883917",
         "name": "isaiah-kunzer-6-15",
         "nsfw": false,
         "parent_id": "1310726961676681306",
@@ -4523,7 +4483,7 @@
                 "type": 1
             }
         ],
-        "position": 47,
+        "position": 48,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -4577,7 +4537,7 @@
                 "type": 1
             }
         ],
-        "position": 35,
+        "position": 36,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -4586,7 +4546,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1308491972641558548",
-        "last_message_id": "1314616732987559956",
+        "last_message_id": "1315831381032439890",
         "name": "hai-nguyen-6-24",
         "nsfw": false,
         "parent_id": "1310727082212462603",
@@ -4604,7 +4564,7 @@
                 "type": 0
             }
         ],
-        "position": 48,
+        "position": 67,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -4613,7 +4573,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1308974536603205652",
-        "last_message_id": "1314019889685598288",
+        "last_message_id": "1315513939928547388",
         "name": "linh-doan-10-24",
         "nsfw": false,
         "parent_id": "1310727082212462603",
@@ -4637,40 +4597,7 @@
                 "type": 0
             }
         ],
-        "position": 52,
-        "rate_limit_per_user": 0,
-        "topic": null,
-        "type": 0
-    },
-    {
-        "flags": 0,
-        "guild_id": "1082338211973566605",
-        "id": "1309184827240485057",
-        "last_message_id": "1314677053626384387",
-        "name": "jared-tamayo-11-25",
-        "nsfw": false,
-        "parent_id": "1309614622701261012",
-        "permission_overwrites": [
-            {
-                "allow": "1024",
-                "deny": "0",
-                "id": "891886111650086943",
-                "type": 1
-            },
-            {
-                "allow": "1049600",
-                "deny": "0",
-                "id": "1294398748209709127",
-                "type": 0
-            },
-            {
-                "allow": "0",
-                "deny": "1049600",
-                "id": "1082338211973566605",
-                "type": 0
-            }
-        ],
-        "position": 30,
+        "position": 71,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -4679,7 +4606,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1309185354615488596",
-        "last_message_id": "1314415265361956916",
+        "last_message_id": "1316185100307664927",
         "name": "gabriela-bisbe-11-25",
         "nsfw": false,
         "parent_id": "1309614622701261012",
@@ -4703,7 +4630,7 @@
                 "type": 0
             }
         ],
-        "position": 31,
+        "position": 30,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -4712,10 +4639,10 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1309187470943977535",
-        "last_message_id": "1314624184000708659",
+        "last_message_id": "1317198159390183468",
         "name": "cindy-chan-11-25",
         "nsfw": false,
-        "parent_id": "1309614622701261012",
+        "parent_id": "1310726961676681306",
         "permission_overwrites": [
             {
                 "allow": "1024",
@@ -4742,7 +4669,7 @@
                 "type": 1
             }
         ],
-        "position": 32,
+        "position": 38,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -4751,7 +4678,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1309556678668193954",
-        "last_message_id": "1314415406148223006",
+        "last_message_id": "1315795540771864596",
         "name": "sheila-moya-garcia-11-25",
         "nsfw": false,
         "parent_id": "1309614622701261012",
@@ -4775,7 +4702,7 @@
                 "type": 1
             }
         ],
-        "position": 34,
+        "position": 31,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -4876,10 +4803,10 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1310795085285429308",
-        "last_message_id": "1314677274943164416",
+        "last_message_id": "1316231876100227157",
         "name": "ivy-nguyen-11-25",
         "nsfw": false,
-        "parent_id": "1309614622701261012",
+        "parent_id": "1310726961676681306",
         "permission_overwrites": [
             {
                 "allow": "1024",
@@ -4900,7 +4827,7 @@
                 "type": 0
             }
         ],
-        "position": 33,
+        "position": 35,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -4909,11 +4836,23 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1310933370707902565",
-        "last_message_id": "1311095962411995167",
+        "last_message_id": "1317029474579255337",
         "name": "li-tan-2-25",
         "nsfw": false,
         "parent_id": "1310727185941659648",
         "permission_overwrites": [
+            {
+                "allow": "1024",
+                "deny": "0",
+                "id": "404267282219663362",
+                "type": 1
+            },
+            {
+                "allow": "1024",
+                "deny": "0",
+                "id": "1294398748209709127",
+                "type": 0
+            },
             {
                 "allow": "0",
                 "deny": "1024",
@@ -4921,7 +4860,7 @@
                 "type": 0
             }
         ],
-        "position": 79,
+        "position": 101,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -4954,7 +4893,7 @@
                 "type": 0
             }
         ],
-        "position": 80,
+        "position": 102,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -4963,7 +4902,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1313556656579285043",
-        "last_message_id": "1314415527178797107",
+        "last_message_id": "1316198402324824194",
         "name": "marygael-jumao-as-12-25",
         "nsfw": false,
         "parent_id": "1309614622701261012",
@@ -4987,7 +4926,7 @@
                 "type": 1
             }
         ],
-        "position": 101,
+        "position": 32,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -4996,7 +4935,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1314023931966918677",
-        "last_message_id": "1314294267300151377",
+        "last_message_id": "1316741494417391677",
         "name": "julian-farr-12-25",
         "nsfw": false,
         "parent_id": "1309614622701261012",
@@ -5020,7 +4959,7 @@
                 "type": 0
             }
         ],
-        "position": 102,
+        "position": 33,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -5029,7 +4968,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1314268681433518151",
-        "last_message_id": "1314474612964331520",
+        "last_message_id": "1317080512820674561",
         "name": "chester-10-25",
         "nsfw": false,
         "parent_id": "1310726961676681306",
@@ -5053,7 +4992,7 @@
                 "type": 1
             }
         ],
-        "position": 103,
+        "position": 49,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -5062,7 +5001,7 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1314269780265533480",
-        "last_message_id": "1314285821775577178",
+        "last_message_id": "1316813469353381979",
         "name": "huy-l-09-25",
         "nsfw": false,
         "parent_id": "1310726961676681306",
@@ -5086,7 +5025,7 @@
                 "type": 1
             }
         ],
-        "position": 104,
+        "position": 50,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
@@ -5095,10 +5034,10 @@
         "flags": 0,
         "guild_id": "1082338211973566605",
         "id": "1314635141884412024",
-        "last_message_id": "1314636578345189407",
+        "last_message_id": "1315356551900430346",
         "name": "matt-sako-09-25",
         "nsfw": false,
-        "parent_id": "1310726961676681306",
+        "parent_id": "1310727082212462603",
         "permission_overwrites": [
             {
                 "allow": "1024",
@@ -5119,7 +5058,439 @@
                 "type": 0
             }
         ],
-        "position": 105,
+        "position": 68,
+        "rate_limit_per_user": 0,
+        "topic": null,
+        "type": 0
+    },
+    {
+        "flags": 0,
+        "guild_id": "1082338211973566605",
+        "id": "1315714814311530556",
+        "last_message_id": "1315714935430578258",
+        "name": "jenny-dean",
+        "nsfw": false,
+        "parent_id": "1310727185941659648",
+        "permission_overwrites": [
+            {
+                "allow": "0",
+                "deny": "1049600",
+                "id": "1082338211973566605",
+                "type": 0
+            },
+            {
+                "allow": "1049600",
+                "deny": "0",
+                "id": "1294398748209709127",
+                "type": 0
+            },
+            {
+                "allow": "1024",
+                "deny": "0",
+                "id": "1224916139268898887",
+                "type": 1
+            }
+        ],
+        "position": 103,
+        "rate_limit_per_user": 0,
+        "topic": null,
+        "type": 0
+    },
+    {
+        "flags": 0,
+        "guild_id": "1082338211973566605",
+        "id": "1315778911350689802",
+        "last_message_id": "1316195530010791937",
+        "name": "nam-hoang-12-25",
+        "nsfw": false,
+        "parent_id": "1309614622701261012",
+        "permission_overwrites": [
+            {
+                "allow": "0",
+                "deny": "1049600",
+                "id": "1082338211973566605",
+                "type": 0
+            },
+            {
+                "allow": "1049600",
+                "deny": "0",
+                "id": "1294398748209709127",
+                "type": 0
+            },
+            {
+                "allow": "1024",
+                "deny": "0",
+                "id": "325816194244280341",
+                "type": 1
+            }
+        ],
+        "position": 34,
+        "rate_limit_per_user": 0,
+        "topic": null,
+        "type": 0
+    },
+    {
+        "flags": 0,
+        "guild_id": "1082338211973566605",
+        "id": "1315807916854612059",
+        "last_message_id": "1317193769451520071",
+        "name": "olivea-nguyen",
+        "nsfw": false,
+        "parent_id": "1310727082212462603",
+        "permission_overwrites": [
+            {
+                "allow": "0",
+                "deny": "1049600",
+                "id": "1082338211973566605",
+                "type": 0
+            },
+            {
+                "allow": "1049600",
+                "deny": "0",
+                "id": "1294398748209709127",
+                "type": 0
+            },
+            {
+                "allow": "1024",
+                "deny": "0",
+                "id": "1172937966855917613",
+                "type": 1
+            }
+        ],
+        "position": 79,
+        "rate_limit_per_user": 0,
+        "topic": null,
+        "type": 0
+    },
+    {
+        "flags": 0,
+        "guild_id": "1082338211973566605",
+        "id": "1316166494962450442",
+        "last_message_id": "1316166624478363668",
+        "name": "tim-pham-04-25",
+        "nsfw": false,
+        "parent_id": "1310726961676681306",
+        "permission_overwrites": [
+            {
+                "allow": "1024",
+                "deny": "0",
+                "id": "1258482095337111645",
+                "type": 1
+            },
+            {
+                "allow": "0",
+                "deny": "1049600",
+                "id": "1082338211973566605",
+                "type": 0
+            },
+            {
+                "allow": "1049600",
+                "deny": "0",
+                "id": "1294398748209709127",
+                "type": 0
+            }
+        ],
+        "position": 51,
+        "rate_limit_per_user": 0,
+        "topic": null,
+        "type": 0
+    },
+    {
+        "flags": 0,
+        "guild_id": "1082338211973566605",
+        "id": "1316550448806887525",
+        "last_message_id": "1317187260336050336",
+        "name": "van-anh-nguyen-11-25",
+        "nsfw": false,
+        "parent_id": "1310726961676681306",
+        "permission_overwrites": [
+            {
+                "allow": "1024",
+                "deny": "0",
+                "id": "454372168852045844",
+                "type": 1
+            },
+            {
+                "allow": "1024",
+                "deny": "0",
+                "id": "1066465177140215928",
+                "type": 1
+            },
+            {
+                "allow": "1024",
+                "deny": "0",
+                "id": "1294398748209709127",
+                "type": 0
+            },
+            {
+                "allow": "0",
+                "deny": "1024",
+                "id": "1082338211973566605",
+                "type": 0
+            },
+            {
+                "allow": "1024",
+                "deny": "0",
+                "id": "1054411267340763216",
+                "type": 1
+            },
+            {
+                "allow": "1024",
+                "deny": "0",
+                "id": "536075832658231299",
+                "type": 1
+            },
+            {
+                "allow": "1024",
+                "deny": "0",
+                "id": "1301989680404758582",
+                "type": 1
+            },
+            {
+                "allow": "1024",
+                "deny": "0",
+                "id": "975774205658411068",
+                "type": 1
+            },
+            {
+                "allow": "1024",
+                "deny": "0",
+                "id": "1307070727966687313",
+                "type": 1
+            }
+        ],
+        "position": 54,
+        "rate_limit_per_user": 0,
+        "topic": null,
+        "type": 0
+    },
+    {
+        "flags": 0,
+        "guild_id": "1082338211973566605",
+        "id": "1316552661968883732",
+        "last_message_id": "1317075352425730121",
+        "name": "an-tran-7-25",
+        "nsfw": false,
+        "parent_id": "1310726961676681306",
+        "permission_overwrites": [
+            {
+                "allow": "1024",
+                "deny": "0",
+                "id": "1261547592177811456",
+                "type": 1
+            },
+            {
+                "allow": "1024",
+                "deny": "0",
+                "id": "454372168852045844",
+                "type": 1
+            },
+            {
+                "allow": "0",
+                "deny": "1024",
+                "id": "1082338211973566605",
+                "type": 0
+            },
+            {
+                "allow": "1024",
+                "deny": "0",
+                "id": "1294398748209709127",
+                "type": 0
+            },
+            {
+                "allow": "1024",
+                "deny": "0",
+                "id": "1066465177140215928",
+                "type": 1
+            },
+            {
+                "allow": "1024",
+                "deny": "0",
+                "id": "1054411267340763216",
+                "type": 1
+            },
+            {
+                "allow": "1024",
+                "deny": "0",
+                "id": "536075832658231299",
+                "type": 1
+            },
+            {
+                "allow": "1024",
+                "deny": "0",
+                "id": "975774205658411068",
+                "type": 1
+            },
+            {
+                "allow": "1024",
+                "deny": "0",
+                "id": "1307070727966687313",
+                "type": 1
+            }
+        ],
+        "position": 55,
+        "rate_limit_per_user": 0,
+        "topic": null,
+        "type": 0
+    },
+    {
+        "flags": 0,
+        "guild_id": "1082338211973566605",
+        "id": "1316871293089353841",
+        "last_message_id": "1316872187117965385",
+        "name": "tara-guthrie",
+        "nsfw": false,
+        "parent_id": "1310727185941659648",
+        "permission_overwrites": [
+            {
+                "allow": "0",
+                "deny": "1024",
+                "id": "1082338211973566605",
+                "type": 0
+            },
+            {
+                "allow": "1024",
+                "deny": "0",
+                "id": "247959041106509824",
+                "type": 1
+            }
+        ],
+        "position": 104,
+        "rate_limit_per_user": 0,
+        "topic": null,
+        "type": 0
+    },
+    {
+        "flags": 0,
+        "guild_id": "1082338211973566605",
+        "id": "1316919234923724960",
+        "last_message_id": "1316919432164937848",
+        "name": "hien-truong-10-25",
+        "nsfw": false,
+        "parent_id": "1310727082212462603",
+        "permission_overwrites": [
+            {
+                "allow": "1024",
+                "deny": "0",
+                "id": "1287801013914304563",
+                "type": 1
+            },
+            {
+                "allow": "1024",
+                "deny": "0",
+                "id": "454372168852045844",
+                "type": 1
+            },
+            {
+                "allow": "0",
+                "deny": "1024",
+                "id": "1082338211973566605",
+                "type": 0
+            },
+            {
+                "allow": "1024",
+                "deny": "0",
+                "id": "1294398748209709127",
+                "type": 0
+            },
+            {
+                "allow": "1024",
+                "deny": "0",
+                "id": "1066465177140215928",
+                "type": 1
+            },
+            {
+                "allow": "1024",
+                "deny": "0",
+                "id": "1054411267340763216",
+                "type": 1
+            },
+            {
+                "allow": "1024",
+                "deny": "0",
+                "id": "536075832658231299",
+                "type": 1
+            },
+            {
+                "allow": "1024",
+                "deny": "0",
+                "id": "975774205658411068",
+                "type": 1
+            },
+            {
+                "allow": "1024",
+                "deny": "0",
+                "id": "1307070727966687313",
+                "type": 1
+            }
+        ],
+        "position": 80,
+        "rate_limit_per_user": 0,
+        "topic": null,
+        "type": 0
+    },
+    {
+        "flags": 0,
+        "guild_id": "1082338211973566605",
+        "id": "1317233364255641721",
+        "last_message_id": "1317233503884279939",
+        "name": "sara",
+        "nsfw": false,
+        "parent_id": "1310726961676681306",
+        "permission_overwrites": [
+            {
+                "allow": "0",
+                "deny": "1024",
+                "id": "1082338211973566605",
+                "type": 0
+            },
+            {
+                "allow": "1024",
+                "deny": "0",
+                "id": "1294398748209709127",
+                "type": 0
+            },
+            {
+                "allow": "1024",
+                "deny": "0",
+                "id": "1303784097738395718",
+                "type": 1
+            }
+        ],
+        "position": 114,
+        "rate_limit_per_user": 0,
+        "topic": null,
+        "type": 0
+    },
+    {
+        "flags": 0,
+        "guild_id": "1082338211973566605",
+        "id": "1317234006277755063",
+        "last_message_id": "1317234057590866041",
+        "name": "judy",
+        "nsfw": false,
+        "parent_id": "1310726961676681306",
+        "permission_overwrites": [
+            {
+                "allow": "1024",
+                "deny": "0",
+                "id": "1299468497407053968",
+                "type": 1
+            },
+            {
+                "allow": "0",
+                "deny": "1024",
+                "id": "1082338211973566605",
+                "type": 0
+            },
+            {
+                "allow": "1024",
+                "deny": "0",
+                "id": "1294398748209709127",
+                "type": 0
+            }
+        ],
+        "position": 115,
         "rate_limit_per_user": 0,
         "topic": null,
         "type": 0
